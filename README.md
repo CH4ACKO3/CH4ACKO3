@@ -1,3 +1,5 @@
+**English** | [简体中文](./README_zh.md)
+
 # Hi, I'm Zhenrui Zheng (CH4AcKO3) 👋
 
 I am a PhD student at **The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)**.
