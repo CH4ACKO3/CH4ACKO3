@@ -1,0 +1,12 @@
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+
+# Local render previews and scratch output
+/Miscellaneous/
+/tmp/

@@ -1,0 +1,401 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Zhenrui Zheng}
+\newcommand{\CVTitle}{Zhenrui Zheng's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{https://scholar.google.com/citations?user=KPpd1pYAAAAJ}
+
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\faIcon{envelope} \texttt{ch4acko3@outlook.com}
+\,\SubBulletSymbol\,
+\faIcon{mobile} \texttt{+86\,159-7977-6837}
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\faIcon{graduation-cap} Google Scholar Profile}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\textbf{The Chinese University of Hong Kong, Shenzhen}
+
+\Gap
+\BulletItem
+Ph.D. Candidate in Computer Science | Expected Graduation: June 2030
+\hfill
+\DatestampYMD{2025}{9}{1} --
+Present
+\BulletItem
+Advisor: Prof. Chenjun Xiao
+\SubBulletItem
+Research Interests: Applying Machine Learning to Sequential Decision-Making Tasks (e.g., Reasoning), Generative Models and Reinforcement Learning. I am particularly driven by the pursuit of elegant, robust, and theoretically sound solutions to fundamental problems in research.
+
+\BigGap
+
+\Entry
+\textbf{Harbin Engineering University}
+
+\Gap
+\BulletItem
+B.Eng. in Aircraft Design and Engineering
+\hfill
+\DatestampYMD{2021}{9}{15} --
+\DatestampYMD{2025}{6}{15}
+\begin{Detail}
+\SubBulletItem
+Weighted average score: 86.93/100 (Ranked 18/65)
+% \SubBulletItem
+% Mathematics course grades: Calculus(94), Linear Algebra(95), Probability and Statistics(95)
+% \SubBulletItem
+% English test scores: CET-4(641), CET-6(565), IELTS(7.0)
+\end{Detail}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\BulletItem
+\href{https://neurips.cc/virtual/2024/competition/84793}{\textbf{NeurIPS Competition 2024: AIGB Track Winner}} (Final standing 4/793)
+\hfill
+\DatestampYM{2024}{11}
+\begin{Detail}
+\Item
+Auto-Bidding in Large-Scale Auctions: Learning Decision-Making in Uncertain and Competitive Games
+\Item
+Implement offline reinforcement-learning agents based on generative models to solve sequential decision-making and game problems in advertising. Compete with professional algorithm engineers from well-known companies/universities and get fourth place (Other listed teams: Kuaishou\textsuperscript{1st}, BUAA\textsuperscript{2nd}, ByteDance\textsuperscript{3rd}, \textbf{My Team}\textsuperscript{4th},  PKU\textsuperscript{10th}, THU\textsuperscript{15th}, Chinese Academy of Sciences\textsuperscript{16th}, SNU\textsuperscript{22th})
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{https://icpc.global/regionals/finder/ICPC-Hangzhou-2023}{\textbf{The 2022 ICPC Asia Hangzhou Regional Contest}}: Silver Medal
+\hfill
+\DatestampYMD{2022}{12}{04}
+\begin{Detail}
+\Item
+The International Collegiate Programming Contest (ICPC) is an annual multi-tiered competitive programming competition among the universities of the world. Directed by ICPC Executive Director and Baylor Professor William B. Poucher, the ICPC operates autonomous regional contests covering six continents.
+\end{Detail}
+% \begin{Detail}
+% \Item
+% For outstanding scientific contributions in the fields of lasers and climate change.
+% \end{Detail}
+
+% \Gap
+% \BulletItem
+% The 2022 ICPC Asia Hefei Regional Contest: Bronze Medal
+% \hfill
+% \DatestampYMD{2022}{11}{19}
+% \begin{Detail}
+% \Item
+% Awarded at the Tenth Annual Chess Tournament held during Open House.
+% \end{Detail}
+
+\Gap
+\BulletItem
+\textbf{The GBA International Programming Contest: }Third Prize
+\hfill
+\DatestampYMD{2025}{4}{19}
+\begin{Detail}
+\Item
+The GBA international programming contest is organized by the Shenzhen SLAI and The CUHKSZ, provides a
+platform for students to demonstrate their
+innovative abilities and skills in analyzing and solving problems.
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{http://www.cmathc.cn/}{\textbf{The Chinese Mathematics Competitions}}: Provincial First Prize
+\hfill
+\DatestampYM{2021}{12}
+% \newline
+% Global Science, Technology, Engineering, and Mathematics Foundation
+\begin{Detail}
+\Item
+National calculus competition for undergraduates. Obtained in the first semester of university, final standing 317/2300
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{https://www.mcm.edu.cn/html_cn/node/5b6ed02462b2ea3d79206e445af3433a.html}{\textbf{Contemporary Undergraduate Mathematical Contest in Modeling}}: National Second Prize
+\hfill
+\DatestampYM{2022}{10}
+% \newline
+% Global Science, Technology, Engineering, and Mathematics Foundation
+\begin{Detail}
+\Item
+One of 1,445 winning teams nationwide
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{www.comap.com}{Interdisciplinary Contest in Modeling}: Meritorious Winner
+\hfill
+\DatestampYM{2024}{02}
+% \newline
+% Global Science, Technology, Engineering, and Mathematics Foundation
+% \begin{Detail}
+% \Item
+% One of 1,445 winning teams nationwide
+% \end{Detail}
+
+\Gap
+\BulletItem
+Collegiate Computer Systems \& Programming Contest: Bronze Medal
+\hfill
+\DatestampYM{2022}{12}
+% \newline
+% Global Science, Technology, Engineering, and Mathematics Foundation
+% \begin{Detail}
+% \Item
+% One of 1,445 winning teams nationwide
+% \end{Detail}
+
+\Gap
+\BulletItem
+First-Class Scholarship for Outstanding Students of the School
+\hfill
+\DatestampYM{2022}{5}
+% \newline
+% Global Science, Technology, Engineering, and Mathematics Foundation
+% \begin{Detail}
+% \Item
+% One of 1,445 winning teams nationwide
+% \end{Detail}
+
+\Gap
+\BulletItem
+Zhou Peiyuan Mechanics Competition for College Students: Provincial Second Prize
+\hfill
+
+\Gap
+\BulletItem
+National Undergraduate Electronics Design Contest: Provincial Third Prize
+\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Organization Experience %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research\newline
+Experience}
+{Professional Affiliations \& Activities}
+{PDF:ProfessionalAffiliationsActivities}
+
+\Entry
+\textbf{Harbin Engineering University ACM/ICPC Team}
+\hfill
+\DatestampYM{2022}{03} --
+\DatestampYM{2022}{12}
+\newline
+Represent the school in ACM/ICPC competitions, be responsible for relevant training courses within the school, and organize regional competitions.
+
+\BigGap
+\textbf{Harbin Engineering University Aircraft Control Laboratory}
+\hfill
+\DatestampYM{2022}{12} --
+\DatestampYM{2023}{11}
+\newline
+Mainly research aircraft simulation, theory and application of advanced control algorithms, and application of statistical learning methods in the control field.
+\begin{Detail}
+\BulletItem
+Built a high-performance C++/Python-mixed aircraft simulation for the lab.
+\BulletItem
+Solve problems in discrete mathematics for the lab.
+%\BulletItem
+%Represented the college to participate in a research institute's cooperation projects and was responsible for the implementation of reinforcement learning algorithms.
+\end{Detail}
+
+\BigGap
+\textbf{Academy of Aerospace Solid Propulsion Technology}
+\hfill
+\DatestampYM{2023}{7} --
+\DatestampYM{2023}{10}
+\newline
+Build a reinforcement learning environment framework and write high-performance simulation of aircraft aerodynamics. Training multi-agent reinforcement learning algorithms (MADDPG) in engineering projects.
+
+\BigGap
+\href{http://rl.beiyang.ren/}{\textbf{Tianjin University Deep Reinforcement Learning Laboratory}}
+\hfill
+\DatestampYM{2023}{11} -- Present
+\newline
+A top research team in the field of reinforcement learning in China, focusing on cutting-edge research in the field of decision-making intelligence.
+\begin{Detail}
+\BulletItem
+Completed a paper as co-author and submitted to \textit{AAAI}.
+\BulletItem
+As a core developer, formed a team to participate in a NeurIPS competition and won a top prize.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Engineering Projects %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\Section
+{Engineering Projects}
+{Engineering Projects}
+{PDF:ResearchExperience}
+
+\Entry
+\textbf{Swarm Aircraft Decision Intelligence Project}
+\hfill
+\DatestampYM{2023}{07}
+\newline
+Academy of Aerospace Solid Propulsion Technology
+\BulletItem
+Programming aircraft six degrees of freedom pneumatic physics simulation
+\BulletItem
+Responsible for the design, deployment and training of reinforcement learning algorithms
+\BulletItem
+Coordinate with other departments to complete joint programming
+
+\BigGap
+\Entry
+\textbf{Aerodrome: A Lightweight physics simulation platform for reinforcement learning}
+\hfill
+\DatestampYM{2025}{01}
+\newline
+C++/Python joint programming reinforcement learning platform, my undergraduate graduation project
+\BulletItem
+High-performance C++ aircraft dynamics simulation
+\SubBulletItem
+Highly extensible code framework
+\SubBulletItem
+Standardized reinforcement learning environment and Python interface
+
+Github Repo: \url{https://github.com/CH4ACKO3/Aerodrome}
+
+\BigGap
+\Entry
+\textbf{ResearchFlow: ML research workflow management toolkit}
+\hfill
+\DatestampYM{2025}{10}
+\newline
+Python-based research toolkit for flexible process scheduling, model/data storage and management
+\Gap
+\BulletItem
+JSON-based indexed file storage
+\SubBulletItem
+Retrieve model and result files by metadata querying, with several training parameter
+\SubBulletItem
+Multi-process and crash-safe
+\BulletItem
+Asynchronous multi-GPU task scheduler
+\SubBulletItem
+Dynamic computing resource monitoring and online GPU scheduling
+\SubSubBulletItem
+Automatically suspend tasks when the system is critical to avoid crashes.
+\SubSubBulletItem
+Withdraw tasks from a GPU and reassign at any time.
+\SubSubBulletItem
+Fully asynchronous and low-latency file I/O, task pool management, compute device management
+\SubBulletItem
+Interact with original text documents, researcher-friendly
+\SubBulletItem
+Robust crash and interrupt handling
+\SubBulletItem
+Comprehensive test suite with 54 test cases (unit, integration, concurrency)
+
+Github Repo: \url{https://github.com/CH4ACKO3/researchflow}
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\Entry
+\href{https://arxiv.org/abs/2408.15501}{MODULI: Unlocking Preference Generalization via Diffusion Models for Offline Multi-Objective Reinforcement Learning}. (\textit{ICML2025})
+
+Yifu Yuan, \textbf{Zhenrui Zheng}, Zibin Dong, Jianye HAO.
+
+Github Repo: \url{https://github.com/pickxiguapi/MODULI}
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}

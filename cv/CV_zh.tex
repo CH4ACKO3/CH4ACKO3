@@ -1,0 +1,475 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\usepackage{xeCJK}
+\setCJKmainfont[
+  BoldFont=FandolSong-Bold,
+  ItalicFont=FandolKai-Regular,
+  BoldItalicFont=FandolKai-Regular
+]{FandolSong-Regular}
+
+% 中文排版角色：正文保留宋体，姓名与导航层级使用黑体。
+\newCJKfontfamily\CVHeadingCJK[
+  BoldFont=FandolHei-Bold
+]{FandolHei-Regular}
+\newcommand{\UseCVBodyFont}{\normalfont\fontsize{9.5pt}{12.5pt}\selectfont}
+\renewcommand{\UrlFont}{\normalfont\fontsize{9pt}{11.8pt}\selectfont}
+\renewcommand{\UseTitleFont}{\normalfont\CVHeadingCJK\fontsize{26pt}{31pt}\selectfont\bfseries}
+\renewcommand{\UseSubTitleFont}{\normalfont\fontsize{9pt}{11.5pt}\selectfont}
+\renewcommand{\UseSectionFont}{\normalfont\CVHeadingCJK\fontsize{9.5pt}{12pt}\selectfont\bfseries}
+\renewcommand{\UseSubSectionFont}{\normalfont\CVHeadingCJK\fontsize{9pt}{11.5pt}\selectfont\bfseries}
+\renewcommand{\UseDetailFont}{\normalfont\fontsize{9pt}{11.8pt}\selectfont}
+\renewcommand{\UseHeaderFooterFont}{\normalfont\fontsize{8.3pt}{10pt}\selectfont}
+\renewcommand{\UseNoteFont}{\normalfont\fontsize{8.3pt}{10pt}\selectfont}
+\renewcommand{\Gap}{\par\vspace{0.75mm}\par}
+\renewcommand{\BigGap}{\par\vspace{2.8mm}\par}
+
+% 中文日期与页码格式。
+\renewcommand{\DatestampYMD}[3]{\mbox{#1年#2月}}
+\renewcommand{\DatestampYM}[2]{\mbox{#1年#2月}}
+\renewcommand{\PageKOfN}{{\UseHeaderFooterFont 第~\thepage~页，共~\pageref{LastPage}~页}}
+
+% 简历信息。
+\newcommand{\CVAuthor}{郑祯睿}
+\newcommand{\CVTitle}{郑祯睿的个人简历}
+\newcommand{\CVNote}{编译于 {\number\year} 年 {\number\month} 月 {\number\day} 日}
+\newcommand{\CVWebpage}{https://scholar.google.com/citations?user=KPpd1pYAAAAJ}
+\newcommand{\ProjectTag}[1]{%
+  \nobreak\hspace{0.35em}%
+  {\normalfont\CVHeadingCJK
+   \fontsize{7.8pt}{9.4pt}\selectfont
+   \color{black!58}「#1」}%
+}
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+\begin{document}
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\faIcon{envelope} \texttt{ch4acko3@outlook.com}
+\,\SubBulletSymbol\,
+\faIcon{mobile} \texttt{+86\,159-7977-6837}
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\faIcon{graduation-cap} Google Scholar 主页}
+\end{SubTitle}
+
+\begin{Body}
+\UseCVBodyFont
+
+%%%%%%%%%%%%%%%%
+%% 教育经历 %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{教育经历}
+{教育经历}
+{PDF:Education}
+
+\Entry
+\textbf{香港中文大学（深圳）}
+
+\Gap
+\BulletItem
+计算机科学博士研究生｜预计毕业时间：2030年6月
+\hfill
+\DatestampYMD{2025}{9}{1} --
+至今
+\BulletItem
+导师：肖晨骏教授
+\BulletItem
+研究兴趣：生成模型与强化学习，Agent Systems \& Agent Infra。
+
+\BigGap
+
+\Entry
+\textbf{哈尔滨工程大学}
+
+\Gap
+\BulletItem
+飞行器设计与工程专业，工学学士
+\hfill
+\DatestampYMD{2021}{9}{15} --
+\DatestampYMD{2025}{6}{15}
+\begin{Detail}
+\SubBulletItem
+加权平均分：86.93/100（排名 18/65）
+\end{Detail}
+
+%%%%%%%%%%%%%%%%
+%% 实习经历 %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{实习经历}
+{实习经历}
+{PDF:InternshipExperience}
+
+\Entry
+\href{https://memorax.net/}{\textbf{MemoraX AI（忆纪元）}}
+\hfill
+\DatestampYM{2026}{4} --
+\DatestampYM{2026}{10}
+
+\Gap
+\BulletItem
+实习生｜深圳市南山区
+\BulletItem
+公司方向：面向 Agent 的长期记忆系统与下一代 AI 记忆基础设施。
+\BulletItem
+项目：\textbf{Agent Meta-Harness}
+\hfill
+\begin{Detail}
+\Item
+\href{https://github.com/CH4AcKO3/Frontal-Lobe}{\textbf{Frontal Lobe}}: 一个分布式的 meta-harness 框架，
+以微服务的形式构建本地 Agent 应用，解决传统单体式 Agent Harness 的扩展性和维护性问题。
+这个项目在即将完成时与 DeepSeek Harness 撞车，定位和功能基本完全重合，因此决定终止。
+但对类似架构的设计和实现积累了相当程度的经验。
+
+\end{Detail}
+\BulletItem
+项目：\textbf{DeepSeek Harness 基础设施与应用}
+\hfill
+\begin{Detail}
+\Item
+- \href{https://github.com/memorax-ai/dsh-harmony}{\textbf{dsh-harmony}}: 插件热补丁系统，
+通过 AST 检索替换的方式实现运行时插件源码热修改。
+\Item
+- \href{https://github.com/CH4AcKO3/dsh-agent-fleet}{\textbf{dsh-agent-fleet}}: 一个完成度很高的去中心化多智能体协作团队应用，
+仿飞书、Raft，并针对 Agent 协作场景和用户体验进行了增强。
+\Item
+- \href{https://github.com/memorax-ai/dsh-webui-studio}{dsh-webui-studio}: 插件客户端交互界面可视化编辑器，用类似 WYSIWYG 的方式构建前端呈现。
+\Item
+- \href{https://github.com/memorax-ai/dsh-patchouli}{dsh-patchouli}: 事务化的统一 Agent Memory/KnowLedge 储存系统。
+\Item
+- \href{https://github.com/CH4AcKO3/dsh-render-engine}{dsh-render-engine}: 一套通用的渲染基础设施。
+\
+\end{Detail}
+
+%%%%%%%%%%%%%%%%
+%% 研究与技术栈 %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{研究与技术栈}
+{研究与技术栈}
+{PDF:Stack}
+
+我能在无 AI 辅助的情况下：
+
+\BulletItem
+研究： 生成模型，扩散模型，强化学习，离线学习
+
+\BulletItem
+Agent Systems： Local Agent Runtime，Multi-Agent Orchestration，Agent Protocol，Tool \& Skills \& Memory Systems
+
+\BulletItem
+Agent Infra： Persistent Context \& Session，Authorization，Sandboxing，Lifecycle
+
+\BulletItem
+编程语言： C/C++，Python，Rust，Lean
+
+\BulletItem
+前端： HTML，CSS，Vue，React
+
+\BulletItem
+Tooling： Node.js，pnpm，uv，Vite
+
+\BigGap
+我能在 AI 辅助下：
+
+\BulletItem
+编程语言： JavaScript/TypeScript，C\#
+\BulletItem
+后端：分布式、数据库
+\BulletItem
+快速掌握感兴趣的新内容
+
+\BigGap
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% 奖项与奖学金 %%
+%%%%%%%%%%%%%%%%%%%%%%
+
+\Section{获奖经历}
+{获奖经历}
+{PDF:AwardsAndScholarships}
+
+\BulletItem
+\href{https://neurips.cc/virtual/2024/competition/84793}{\textbf{NeurIPS Competition 2024：AIGB 赛道优胜者}}（最终排名 4/793）
+\hfill
+\DatestampYM{2024}{11}
+\begin{Detail}
+\Item
+大规模拍卖中的自动出价：在不确定性与竞争博弈中学习决策
+\Item
+实现基于生成模型的离线强化学习智能体，用于解决广告场景中的序列决策与博弈问题；与来自知名企业和高校的专业算法工程师同台竞技，最终取得第四名（其他上榜队伍：快手第1名、北航第2名、字节跳动第3名、\textbf{本团队第4名}、北大第10名、清华第15名、中科院第16名、首尔大学第22名）。
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{https://icpc.global/regionals/finder/ICPC-Hangzhou-2023}{\textbf{2022 ICPC 亚洲区域赛杭州站}}：银牌
+\hfill
+\DatestampYMD{2022}{12}{04}
+\begin{Detail}
+\Item
+国际大学生程序设计竞赛（ICPC）是一项面向全球高校学生的年度多层级程序设计竞赛，由 ICPC 执行主任、贝勒大学教授 William B. Poucher 领导，在六大洲分别组织区域赛事。
+\end{Detail}
+
+\Gap
+\BulletItem
+\textbf{粤港澳大湾区国际程序设计竞赛：}三等奖
+\hfill
+\DatestampYMD{2025}{4}{19}
+\begin{Detail}
+\Item
+该赛事由深圳 SLAI 与香港中文大学（深圳）组织，为学生展示创新能力以及分析、解决问题的能力提供平台。
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{http://www.cmathc.cn/}{\textbf{全国大学生数学竞赛}}：省级一等奖
+\hfill
+\DatestampYM{2021}{12}
+\begin{Detail}
+\Item
+面向本科生的全国性微积分竞赛；于大学第一学期参赛，最终排名 317/2300。
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{https://www.mcm.edu.cn/html_cn/node/5b6ed02462b2ea3d79206e445af3433a.html}{\textbf{全国大学生数学建模竞赛}}：国家二等奖
+\hfill
+\DatestampYM{2022}{10}
+\begin{Detail}
+\Item
+全国 1,445 支获奖队伍之一。
+\end{Detail}
+
+\Gap
+\BulletItem
+\href{https://www.comap.com}{美国大学生数学建模竞赛（ICM）}：Meritorious Winner
+\hfill
+\DatestampYM{2024}{02}
+
+\Gap
+\BulletItem
+大学生计算机系统与程序设计竞赛（CCSP）：铜奖
+\hfill
+\DatestampYM{2022}{12}
+
+\Gap
+\BulletItem
+校级优秀学生一等奖学金
+\hfill
+\DatestampYM{2022}{5}
+
+\Gap
+\BulletItem
+周培源大学生力学竞赛：省级二等奖
+
+\Gap
+\BulletItem
+全国大学生电子设计竞赛：省级三等奖
+
+%%%%%%%%%%%%%%%%
+%% 研究经历 %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{研究经历}
+{研究经历}
+{PDF:ResearchExperience}
+
+\Entry
+\textbf{哈尔滨工程大学 ACM/ICPC 校队}
+\hfill
+\DatestampYM{2022}{03} --
+\DatestampYM{2022}{12}
+\newline
+代表学校参加 ACM/ICPC 系列竞赛，负责校内相关训练课程，并组织区域性竞赛。
+
+\BigGap
+\textbf{哈尔滨工程大学飞行器控制实验室}
+\hfill
+\DatestampYM{2022}{12} --
+\DatestampYM{2023}{11}
+\newline
+主要研究飞行器仿真、先进控制算法的理论与应用，以及统计学习方法在控制领域中的应用。
+\begin{Detail}
+\BulletItem
+为实验室构建高性能 C++/Python 混合飞行器仿真系统。
+\BulletItem
+为实验室解决离散数学相关问题。
+\end{Detail}
+
+\BigGap
+\textbf{航天固体推进技术研究院}
+\hfill
+\DatestampYM{2023}{7} --
+\DatestampYM{2023}{10}
+\newline
+构建强化学习环境框架并编写高性能飞行器气动仿真，在工程项目中训练多智能体强化学习算法（MADDPG）。
+
+\BigGap
+\href{http://rl.beiyang.ren/}{\textbf{天津大学深度强化学习实验室}}
+\hfill
+\DatestampYM{2023}{11} -- 至今
+\newline
+国内强化学习领域的前沿研究团队，专注于决策智能方向的前沿研究。
+\begin{Detail}
+\BulletItem
+以共同作者身份完成一篇论文并投稿至 \textit{AAAI}。
+\BulletItem
+作为核心开发者组建团队参加 NeurIPS 竞赛并获得优胜奖项。
+\end{Detail}
+
+%%%%%%%%%%%%%%%%
+%% 工程项目 %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{工程项目}
+{工程项目}
+{PDF:EngineeringProjects}
+
+\BigGap
+\Entry
+\textbf{集群飞行器决策智能项目}
+\ProjectTag{物理仿真}
+\ProjectTag{强化学习策略}
+\hfill
+\DatestampYM{2023}{07}
+\newline
+航天固体推进技术研究院
+\BulletItem
+编写飞行器六自由度气动与物理仿真
+\BulletItem
+负责强化学习算法的设计、部署与训练
+\BulletItem
+协调其他部门完成联合调试部署
+
+\BigGap
+\Entry
+\textbf{Aerodrome：轻量级强化学习物理仿真平台}
+\ProjectTag{物理仿真}
+\ProjectTag{基础设施}
+\hfill
+\DatestampYM{2025}{01}
+\newline
+C++/Python 联合开发的强化学习平台，本科毕业设计项目
+\BulletItem
+高性能 C++ 飞行器动力学仿真
+\SubBulletItem
+高度可扩展的代码框架
+\SubBulletItem
+标准化强化学习环境与 Python 接口
+
+Code：\url{https://github.com/CH4ACKO3/Aerodrome}
+
+\BigGap
+\Entry
+\href{https://github.com/CH4AcKO3/Frontal-Lobe}{\textbf{Frontal-Lobe：基于 Modern MCP 的分布式 Meta-Harness}}
+\ProjectTag{Agent Runtime}
+\ProjectTag{MCP}
+\ProjectTag{Rust}
+\newline
+这是一个使用 Rust 开发的、基于 Modern MCP 协议的分布式 Harness 框架，设计理念是将传统单体式的本地嵌入 Agent App，
+转换为去中心化的、以微服务的形式构建的服务集群。每个 Agent、Tool、Provider 以提供服务的方式实现沟通，
+并在此基础上构建更复杂的应用。这个框架严格实现了一致性模型、事务模型，确保不可靠环境中的稳定性。
+
+在项目进入发布阶段时被定位相同的 DeepSeek Harness 撞车，
+但是已经实现了一系列有趣的功能，并最终决定迁移到 DSH 上：
+\href{https://icn07qje5tl4.feishu.cn/wiki/NLGAwkXpsicdGgk6hnoc0vRknDf?from=from_copylink}{\textbf{Preview}}
+
+
+\BigGap
+\Entry
+\href{https://github.com/memorax-ai/dsh-harmony}{\textbf{dsh-harmony：DSH 插件运行时热补丁框架}}
+\ProjectTag{Agent Infra}
+\ProjectTag{AST Tooling}
+\ProjectTag{TypeScript}
+\newline
+为 DeepSeek Harness 设计并开发的插件运行时热补丁框架，基本原理是让补丁定义 AST 查询与替换语法，
+实现运行时对插件编译后的 JavaScript 源码的 Patching，为 DSH 框架补上了插件不可热修改的缺口。
+背后实际有比较多的工程问题与解决技巧，例如补丁冲撞的解决、启动时 AST 查询的效率问题等。
+
+\BigGap
+\Entry
+\href{https://github.com/CH4AcKO3/dsh-agent-fleet}{\textbf{dsh-agent-fleet：去中心化的多智能体协作系统}}
+\ProjectTag{Multi-Agent}
+\ProjectTag{Orchestration}
+\ProjectTag{TypeScript}
+\newline
+开发了完整的 multi-agent 持久协作系统。与传统多智能体模型不同的是，其不依赖一个中心化的协调 Agent，极大缓解了协作场景下对一个强中心 Agent 的依赖和相应的性能界限。
+作为产品，我参考了飞书、Raft 等人/Agent 的办公与协作应用，吸收了其中大量有益的功能特性，
+并将学术领域有名的 Agent 模拟开发团队研究 ChatDev: Communicative Agents for Software Development 做了进一步完善，
+形成可配置的 Agent 阵容。
+
+\BigGap
+\Entry
+\href{https://github.com/memorax-ai/dsh-webui-studio}{\textbf{dsh-webui-studio：DSH 插件界面可视化开发工具}}
+\ProjectTag{Agent UI}
+\ProjectTag{WYSIWYG}
+\ProjectTag{TypeScript}
+\newline
+面向人类与 Agent 构建 visual-first 的集成开发环境，使插件客户端界面能够在能力约束内进行可视化设计与实现。
+
+\BigGap
+\Entry
+\href{https://github.com/memorax-ai/dsh-patchouli}{\textbf{dsh-patchouli：本地优先的 Agent Memory 与知识中枢}}
+\ProjectTag{Agent Memory}
+\ProjectTag{Local-first}
+\ProjectTag{Rust/SQLite}
+\newline
+以统一的 update、retrieve 与 subscribe 接口解耦数据源、记忆算法和消费方，支持流式检索、来源追踪与事务存储。
+
+
+%%%%%%%%%%%%%%%%
+%% 论文发表 %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{论文发表}
+{论文发表}
+{PDF:Publications}
+
+\Entry
+\href{https://arxiv.org/abs/2408.15501}{MODULI: Unlocking Preference Generalization via Diffusion Models for Offline Multi-Objective Reinforcement Learning}.（\textit{ICML 2025}）
+
+Yifu Yuan, \textbf{Zhenrui Zheng}, Zibin Dong, Jianye HAO.
+
+这是一个关于扩散生成模型在多目标策略优化中的应用的工作。我们观察了扩散生成模型中的引导强度，与多目标策略中的偏好对齐两个概念之间的联系，
+并在实验中取得了 SOTA 的效果。我为理论模型编写了实验代码，并搭建和优化了训练 pipeline。
+另外，我们在实验中挖掘了引导强度与定量偏好之间的数值关系，将从另一工作 (Sliding Guidance) 取得的灵感成功实施到生成式策略领域中。
+
+Paper: \url{https://arxiv.org/abs/2408.15501}
+
+Code: \url{https://github.com/pickxiguapi/MODULI}
+
+\end{Body}
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
