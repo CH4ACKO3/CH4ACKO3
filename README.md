@@ -52,7 +52,7 @@ A runtime hot-patching framework designed and developed for DeepSeek Harness. Pa
 
 A complete system for persistent multi-agent collaboration. Unlike conventional multi-agent designs, it does not rely on a central coordinating agent, substantially reducing both the dependence on a single powerful coordinator and the resulting performance ceiling. Its product and system design draws inspiration from collaboration tools such as Feishu and distributed protocols such as Raft. It also extends the well-known agent-based software development study [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) with configurable agent rosters, giving each agent a distinct prompt—perhaps best described as *distributed prompting*.
 
-During development, I also contributed infrastructure to the community: [dsh-render-engine](https://github.com/CH4AcKO3/dsh-render-engine), a suite of rendering-infrastructure service plugins, and [dsh-hover-hint](https://www.npmjs.com/package/dsh-hover-hint), a native-style hover-tooltip component.
+During development, I also contributed infrastructure to the community: [dsh-render-engine](https://github.com/memorax-ai/dsh-render-engine), a suite of rendering-infrastructure service plugins, and [dsh-hover-hint](https://www.npmjs.com/package/dsh-hover-hint), a native-style hover-tooltip component.
 
 **[dsh-webui-studio](https://github.com/memorax-ai/dsh-webui-studio) — WYSIWYG Development for DSH Plugin Interfaces**
 
@@ -77,10 +77,6 @@ My undergraduate thesis project. I built a high-performance simulation platform 
 **[Simple Mending Yourself](https://github.com/CH4AcKO3/SimpleMendingYourself) — A RimWorld Quality-of-Life Mod**
 
 A small mod that allows pawns to repair their own equipment directly with raw materials. It addresses a surprisingly common pain point and has been warmly received on the Steam Workshop.
-
-**[Rim Alert](https://github.com/CH4ACKO3/RimAlert) — A Campaign and Operations Framework for RimWorld**
-
-A work-in-progress RimWorld mod that provides narrative and gameplay frameworks for campaigns and operations, giving the ecosystem's many combat and character-enhancement mods meaningful scenarios in which to be used.
 
 ## Contact
 

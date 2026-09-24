@@ -39,7 +39,7 @@
 
 **[dsh-agent-fleet](https://github.com/CH4AcKO3/dsh-agent-fleet)**
 
-开发了完整的 multi-agent 持久协作系统。与传统多智能体模型不同的是，其不依赖一个中心化的协调 Agent，极大缓解了协作场景下对一个强中心 Agent 的依赖和相应的性能界限。作为产品，我参考了飞书、Raft 等人/Agent 的办公与协作应用，吸收了其中大量有益的功能特性，并将学术领域有名的 Agent 模拟开发团队研究 [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) 做了进一步完善，形成可配置的 Agent 阵容，为每个 Agent 配置了独特的提示词（也许你可以称之为“分布式提示词”）。在开发过程中，我也为社区贡献了一系列基础设施：[dsh-render-engine](https://github.com/CH4AcKO3/dsh-render-engine)（一套渲染 infra 服务插件），[dsh-hover-hint](https://www.npmjs.com/package/dsh-hover-hint)（界面悬浮提示框的原生风格组件）
+开发了完整的 multi-agent 持久协作系统。与传统多智能体模型不同的是，其不依赖一个中心化的协调 Agent，极大缓解了协作场景下对一个强中心 Agent 的依赖和相应的性能界限。作为产品，我参考了飞书、Raft 等人/Agent 的办公与协作应用，吸收了其中大量有益的功能特性，并将学术领域有名的 Agent 模拟开发团队研究 [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) 做了进一步完善，形成可配置的 Agent 阵容，为每个 Agent 配置了独特的提示词（也许你可以称之为“分布式提示词”）。在开发过程中，我也为社区贡献了一系列基础设施：[dsh-render-engine](https://github.com/memorax-ai/dsh-render-engine)（一套渲染 infra 服务插件），[dsh-hover-hint](https://www.npmjs.com/package/dsh-hover-hint)（界面悬浮提示框的原生风格组件）
 
 **[dsh-webui-studio](https://github.com/memorax-ai/dsh-webui-studio)**
 
@@ -66,10 +66,6 @@
 **[Simple Mending Yourself](https://github.com/CH4AcKO3/SimpleMendingYourself)**
 
 一个 RimWorld 的 QoL 模组，让游戏角色可以直接使用原料修补自己的装备。这个小模组看起来解决了一个游戏中很多人遇到的小问题，在创意工坊受到欢迎。
-
-**[Rim Alert](https://github.com/CH4ACKO3/RimAlert)**
-
-这是一个仍在开发阶段的 Rimworld 模组，核心是构建战役、行动的叙事和机制框架，让模组生态中数量庞大的战斗/角色强化模组真正被“运用”起来。
 
 ## 联系我
 
