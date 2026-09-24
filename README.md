@@ -4,6 +4,8 @@
 
 I am a PhD student at **The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)**.
 
+I previously interned at [MemoraX](https://github.com/memorax-ai).
+
 My research interests are broad, with a focus on generative models, reinforcement learning, and agent systems. I also enjoy building software—particularly games, optimized algorithms, automation systems, and infrastructure.
 
 ## Research & Technical Stack

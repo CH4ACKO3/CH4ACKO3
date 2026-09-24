@@ -3,6 +3,7 @@
 # Hi, I'm Zhenrui Zheng (CH4AcKO3) 👋
 
 - 🌱 我目前是香港中文大学（深圳）在读博士
+- 💼 我曾在 [MemoraX](https://github.com/memorax-ai) 实习。
 - 🔭 我的研究兴趣很广泛，比较熟悉的有：生成模型、强化学习、Agent 系统等。
 - 🌈 我也对开发具有兴趣，尤其是游戏开发、算法优化、自动化系统、Infra。
 
